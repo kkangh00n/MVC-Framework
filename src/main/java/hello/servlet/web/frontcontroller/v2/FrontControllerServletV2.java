@@ -36,7 +36,7 @@ public class FrontControllerServletV2 extends HttpServlet {
             return;
         }
 
-        MyView view = controller.process(request, response);
-        view.render(request, response);
+        MyView view = controller.process(request, response);        //view 주소 반환
+        view.render(request, response);                             //view 주소 렌더링
     }
 }

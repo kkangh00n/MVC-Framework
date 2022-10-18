@@ -22,7 +22,7 @@ public class MemberSaveControllerV2 implements ControllerV2 {
         Member member = new Member(username, age);
         memberRepository.save(member);
 
-        request.setAttribute("member", member);
+        request.setAttribute("member", member);             //model에 데이터 보관
 
         return new MyView("/WEB-INF/views/save-result.jsp");
     }
