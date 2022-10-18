@@ -43,7 +43,7 @@ public class FrontControllerServletV5 extends HttpServlet {
             return;
         }
 
-        MyHandlerAdapter adapter = getHandlerAdapter(handler);          //2. 핸들러 어댑터 목록에서 갖고옴
+        MyHandlerAdapter adapter = getHandlerAdapter(handler);          //2. 핸들러에 맞는 핸들러 어댑터 목록에서 갖고옴
 
         ModelView mv = adapter.handle(request, response, handler);         //3. 핸들 호출
 
