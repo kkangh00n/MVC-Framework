@@ -25,7 +25,7 @@ public class SpringMemberControllerV3 {
     //1. 회원가입 버튼을 누르면 save버튼을 통해 save-result 페이지 출력
     //2. @RequestParam을 통해 Http Post메시지의 파라미터들 핸들러가 전달받음
     //3.model을 통해 회원 정보가 들어있는 객체를 뷰가 전달받음
-    //@RequestParam을 통해 Htt
+
     public String save(@RequestParam("username") String username, @RequestParam("age") int age, Model model) {
 
         Member member = new Member(username, age);
